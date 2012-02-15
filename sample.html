@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>readfileby - sample</title>
+<style>
+#droparea { width: 200px; height: 90px; border: 1px dashed black;}
+</style>
+</head>
+<body>
+<h1 id="logo">readfileby - sample</h1>
+<h3>note: must be run from a server, not a local file (will not work
+if run from a local file)</h3>
+
+<div id="droparea">drop files here</div>
+<input type="file" id="files" name="files">
+<br><hr><br>
+
+<script src="./main.js"></script>
+<script>
+ReadFileBy.Paste.asDataURL(document.body, function(duri){var i = new Image();
+i.src=duri; document.body.appendChild(i);});
+
+ReadFileBy.Drop.asDataURL(document.getElementById('droparea'), function(duri){var i = new Image();
+i.src=duri; document.body.appendChild(i);});
+
+ReadFileBy.FileSelect.asDataURL(document.getElementById('files'), function(duri){var i = new Image();
+i.src=duri; document.body.appendChild(i);});
+</script>
+</body>
+</html>
