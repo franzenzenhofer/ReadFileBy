@@ -1,6 +1,6 @@
 #ReadFileBy
 
-##simple HTML5 filereader wrapper
+##simple HTML5 filereader API wrapper
 
 supports
 
