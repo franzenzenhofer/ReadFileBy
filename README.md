@@ -2,6 +2,8 @@
 
 ##simple HTML5 filereader API wrapper
 
+### V0.1
+
 supports
 
  * drag & drop
